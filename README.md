@@ -1,0 +1,1 @@
+This is a Cognify Internship Project for Web development
