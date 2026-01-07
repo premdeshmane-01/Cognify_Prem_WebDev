@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery & Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery & Slideshow Demo</h1>
+        
+        <!-- Image Gallery Section -->
+        <section>
+            <h2>Click to Enlarge Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Mountain Landscape">
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=400&h=300&fit=crop" alt="Ocean Waves">
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="Forest Path">
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Desert Dunes">
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=300&fit=crop" alt="Tropical Beach">
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop" alt="Misty Valley">
+                </div>
+            </div>
+        </section>
+
+        <!-- Automatic Slideshow Section -->
+        <section>
+            <h2>Automatic Slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop" alt="Slide 1">
+                    <div class="slide-caption">Majestic Mountain Peaks</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=800&h=400&fit=crop" alt="Slide 2">
+                    <div class="slide-caption">Serene Ocean Views</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=400&fit=crop" alt="Slide 3">
+                    <div class="slide-caption">Enchanting Forest Trail</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop" alt="Slide 4">
+                    <div class="slide-caption">Golden Desert Landscape</div>
+                </div>
+            </div>
+            <div class="slide-indicators">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for enlarged images -->
+    <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-divider {
+    margin: 3rem 0;
+    border-top: 3px solid #e0e0e0;
+}
+
+.framework-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.bulma-section {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.bootstrap-section {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+}
+
+.demo-card-img {
+    height: 200px;
+    object-fit: cover;
+}

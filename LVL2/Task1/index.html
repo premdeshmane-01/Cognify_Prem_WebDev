@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Frameworks Demo</title>
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Task 1: Bulma Card Component -->
+    <section class="bulma-section">
+        <div class="container">
+            <div class="framework-title has-text-centered">
+                <h1 class="title is-2 has-text-white">Task 1: Bulma Card Component</h1>
+                <p class="subtitle is-5 has-text-white-ter">Responsive card with image and text</p>
+            </div>
+            
+            <div class="columns is-multiline">
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Mountain landscape" class="demo-card-img">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Mountain Adventure</p>
+                                    <p class="subtitle is-6">Nature & Exploration</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Discover breathtaking mountain landscapes and pristine wilderness. Experience the beauty of nature at its finest with stunning vistas and peaceful trails.
+                                <br>
+                                <time datetime="2024-01">January 2024</time>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Explore</a>
+                            <a href="#" class="card-footer-item">Save</a>
+                        </footer>
+                    </div>
+                </div>
+                
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400" alt="Ocean view" class="demo-card-img">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Ocean Paradise</p>
+                                    <p class="subtitle is-6">Beach & Relaxation</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Immerse yourself in crystal-clear waters and golden sandy beaches. The perfect destination for relaxation and unforgettable sunsets.
+                                <br>
+                                <time datetime="2024-01">January 2024</time>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Explore</a>
+                            <a href="#" class="card-footer-item">Save</a>
+                        </footer>
+                    </div>
+                </div>
+                
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400" alt="City skyline" class="demo-card-img">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Urban Exploration</p>
+                                    <p class="subtitle is-6">City & Culture</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Experience the vibrant energy of modern cities. From towering skyscrapers to hidden cultural gems, discover urban adventures.
+                                <br>
+                                <time datetime="2024-01">January 2024</time>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Explore</a>
+                            <a href="#" class="card-footer-item">Save</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- Task 2: Bootstrap Grid Layout -->
+    <section class="bootstrap-section">
+        <div class="container">
+            <div class="framework-title text-center">
+                <h1 class="display-4">Task 2: Bootstrap Grid Layout</h1>
+                <p class="lead">Responsive grid system demonstration</p>
+            </div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Column 1</h5>
+                            <p class="card-text">Full width on mobile, half on tablet, quarter on desktop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">Column 2</h5>
+                            <p class="card-text">Responsive grid adapts to screen size automatically</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning">Column 3</h5>
+                            <p class="card-text">Bootstrap's 12-column system is flexible and powerful</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">Column 4</h5>
+                            <p class="card-text">Gutters provide consistent spacing between columns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Main Content Area (8 columns)</h5>
+                            <p class="card-text">This section takes up 8 columns on large screens and full width on smaller screens. Perfect for your main content area with detailed information and rich media.</p>
+                            <p class="card-text">The Bootstrap grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Sidebar (4 columns)</h5>
+                            <p class="card-text">This sidebar takes 4 columns on large screens. Great for navigation, widgets, or supplementary information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body text-center">
+                            <p class="mb-0 fw-bold">Item 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

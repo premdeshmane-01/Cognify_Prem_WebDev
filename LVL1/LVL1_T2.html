@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 - Task 1 (JavaScript)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { margin-top: 0; }
+        
+        /* Styling for Task 1 Button */
+        #colorBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        /* Styling for Task 3 Inputs */
+        input {
+            padding: 8px;
+            width: 80px;
+            margin-right: 10px;
+        }
+        .result {
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>1. Color Changing Button</h2>
+        <p>Click the button below to change its color.</p>
+        <button id="colorBtn" onclick="changeColor()">Click Me!</button>
+    </section>
+
+    <section>
+        <h2>2. Time-based Greeting</h2>
+        <p>Click to see a greeting based on your current time.</p>
+        <button onclick="showGreeting()">Show Greeting</button>
+    </section>
+
+    <section>
+        <h2>3. Addition Calculator</h2>
+        <input type="number" id="num1" placeholder="Number 1">
+        <span>+</span>
+        <input type="number" id="num2" placeholder="Number 2">
+        <button onclick="addNumbers()">=</button>
+        
+        <p>Result: <span id="calcResult" class="result">0</span></p>
+    </section>
+
+    <script>
+        // --- TASK 1: Change Button Color ---
+        function changeColor() {
+            const btn = document.getElementById('colorBtn');
+            // Generate a random color
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            btn.style.backgroundColor = randomColor;
+        }
+
+        // --- TASK 2: Time-based Greeting Alert ---
+        function showGreeting() {
+            const now = new Date();
+            const hour = now.getHours();
+            let greeting;
+
+            if (hour < 12) {
+                greeting = "Good Morning!";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+
+            alert(greeting + " The current hour is " + hour + ":00.");
+        }
+
+        // --- TASK 3: Addition Calculator ---
+        function addNumbers() {
+            // 1. Get values from input fields
+            const val1 = document.getElementById('num1').value;
+            const val2 = document.getElementById('num2').value;
+
+            // 2. Convert strings to numbers (using parseFloat for decimals)
+            const number1 = parseFloat(val1);
+            const number2 = parseFloat(val2);
+
+            // 3. Check if inputs are valid numbers
+            if (isNaN(number1) || isNaN(number2)) {
+                document.getElementById('calcResult').innerText = "Please enter valid numbers";
+            } else {
+                // 4. Perform addition and update the display
+                const sum = number1 + number2;
+                document.getElementById('calcResult').innerText = sum;
+            }
+        }
+    </script>
+</body>
+</html>
